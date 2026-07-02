@@ -1,0 +1,16 @@
+provider "aws" {
+region = "ap-south-1"
+}
+
+resource "aws_instance" "webappserver" {
+tags = {
+name = "Terraform-server"
+Environment = "prod"
+Client = "orange"
+}
+
+ami = "ami-0d351f1b760a30161"
+instance_type = "t3.micro" 
+key_name = "new-keypair"
+availability_zone = "ap-south-1a"
+}
