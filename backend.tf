@@ -5,5 +5,6 @@ backend "s3" {
 bucket = "deepthi-bucket-77"
 key = "prod/terraform.tfstate"
 region = "eu-north-1"
+use_lockfile = "true"
 }
 }
