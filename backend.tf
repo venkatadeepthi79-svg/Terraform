@@ -1,4 +1,4 @@
-#here we are storing the state file in aws s3 bucket#
+#here we are storing the state file in aws s3 bucket and  enabled the state locking#
 terraform {
 backend "s3" {
 
