@@ -1,0 +1,23 @@
+# here we have given the version provider and alias #
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 6.50.0"
+    }
+  }
+}
+
+provider "aws" {
+region = "eu-north-1"
+}
+
+provider "aws" {
+region = "ap-south-1"
+alias = "ap-server"
+}
+
+
+
+
